@@ -5,16 +5,16 @@
 </head>
 <body>
     <div>
-        <h1>Test Website</h1>
+        <h1 id="header">Test Website</h1>
         <div>Hello</div>
         <img src="http://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg" />
     </div>
     <script>
-        console.warn('Hey this is a very important warning okay')
-
-        console.warn('Another warning just in case')
-
         console.error('This is a console error')
+
+        document.querySelector('#header').addEventListener('click', () => {
+            console.error('Error clicking on the header')
+        })
     </script>
 </body>
 </html>
