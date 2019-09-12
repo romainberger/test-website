@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Test website</title>
+    <style>
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+        body {
+            display: flex;
+            height: 100%;
+            min-height: 100%;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            color: #999;
+            background: #efefef;
+        }
+        a {
+            display: block;
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
     <div>
         <h1 id="header">Test Website</h1>
         <div>Hello</div>
-        <img src="http://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg" />
+        <img src="http://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg" width="200" />
+        <div>
+            <a href="page2.html">Click me for page 2</a>
+        </div>
     </div>
     <script>
         console.error('This is a console error')
